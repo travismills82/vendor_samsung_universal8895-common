@@ -223,4 +223,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02c_a1:system/vendor/etc/wifi/nvram.txt_r02c_a1 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02g_b0:system/vendor/etc/wifi/nvram.txt_r02g_b0 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/wldu.conf:system/vendor/etc/wifi/wldu.conf \
-    vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/.clminfo:system/vendor/etc/wifi/.clminfo
+    vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/.clminfo:system/vendor/etc/wifi/.clminfo \
+    vendor/samsung/universal8895-common/proprietary/lib/vendor.samsung.hardware.radio@1.0.so:system/lib/vendor.samsung.hardware.radio@1.0.so \
+    vendor/samsung/universal8895-common/proprietary/lib64/vendor.samsung.hardware.radio@1.0.so:system/lib64/vendor.samsung.hardware.radio@1.0.so
