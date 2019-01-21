@@ -1,7 +1,7 @@
 # BCM4361B0 Murata 1KL
-# Release date : 20170209
+# Release date : 20170213
 # For Type-1KL : ES3.3
-# Test F/W : IGUANA08T_REL_13_35_67_MFG
+# Test F/W : IGUANA08T_REL_13_35_53_MFG
 NVRAMRev=$Rev: 506283 $
 sromrev=11
 boardrev=0x1300
@@ -124,10 +124,10 @@ pa5ga1=-234,6310,-792,-234,6337,-796,-235,6314,-793,-235,6350,-797
 
 
 # Target max Power
-maxp2ga0=84
-maxp2ga1=87
-maxp5ga0=82,80,81,81
-maxp5ga1=82,80,81,82
+maxp2ga0=82
+maxp2ga1=88
+maxp5ga0=75,73,73,74
+maxp5ga1=77,76,77,79
 subband5gver=0x4
 paparambwver=3
 ## Target power & offset parameters
@@ -137,23 +137,23 @@ pdoffset40ma0=0xEFFF
 pdoffset80ma0=0xEFFF
 pdoffset40ma1=0xEFFF
 pdoffset80ma1=0xEEFF
-cckbw202gpo=0x0122
+cckbw202gpo=0x0033
 cckbw20ul2gpo=0
-mcsbw202gpo=0xAA866644
+mcsbw202gpo=0xAA866666
 mcsbw402gpo=0xCCAA8886
-dot11agofdmhrbw202gpo=0x8866
-ofdmlrbw202gpo=0x0044
-mcsbw205glpo=0x86444442
-mcsbw405glpo=0xCCC99996
-mcsbw805glpo=0xEEEEEEEC
+dot11agofdmhrbw202gpo=0x8666
+ofdmlrbw202gpo=0x0023
+mcsbw205glpo=0x84310000
+mcsbw405glpo=0xAAA88883
+mcsbw805glpo=0xCCCAAAA5
 mcsbw1605glpo=0
-mcsbw205gmpo=0x84444442
-mcsbw405gmpo=0x99999AA8
-mcsbw805gmpo=0xBBCDDEDA
+mcsbw205gmpo=0x83320000
+mcsbw405gmpo=0xAA988883
+mcsbw805gmpo=0xDCCAAAA6
 mcsbw1605gmpo=0
-mcsbw205ghpo=0x85444443
-mcsbw405ghpo=0xDDDBBAA8
-mcsbw805ghpo=0xFFFFFFFD
+mcsbw205ghpo=0x84420000
+mcsbw405ghpo=0xAAA88883
+mcsbw805ghpo=0xDCCAAAA5
 mcsbw1605ghpo=0
 mcslr5glpo=0x0000
 mcslr5gmpo=0x0000
@@ -248,8 +248,8 @@ rssicorrnorm_c1=10,10
 rssicorrnorm5g_c0=5,5,5,5,5,5,5,5,5,6,6,6
 rssicorrnorm5g_c1=4,4,4,4,4,4,4,4,4,5,4,4
 ## 2G CH compensation Parameters
-slice/1/powoffs2gtna0=-1,1,1,1,1,1,1,2,2,2,1,0,-2,0
-slice/1/powoffs2gtna1=-2,-1,-1,0,1,1,1,1,0,0,0,0,0,0
+slice/1/powoffs2gtna0=-1,-1,0,-1,-1,-2,-2,-1,-1,0,0,0,-3,1
+slice/1/powoffs2gtna1=-2,-1,0,0,0,1,1,-1,-1,-1,0,-1,-1,1
 ## Imp_TXBF calibration parameters
 rpcal2g=245
 rpcal5gb0=129
@@ -272,26 +272,25 @@ powoffs5g80mtna1=0,0,0,0,0
 
 # ###########  Configuration for Software Features ############
 ## --- SAR power back off ---
-## SAR Enable ON & Non-RSDB & Non-FCC
+slice/1/dynamicsarctrl_2g=0xbcbc
 dynamicsarctrl_5g=0xb4b4
-slice/1/dynamicsarctrl_2g=0xc0c0
-## SAR Enable OFF & Non-RSDB & FCC
+slice/1/dynamicsarctrl_2g_2=0xbcbc
 dynamicsarctrl_5g_2=0xb4b4
-slice/1/dynamicsarctrl_2g_2=0xc0c0
+
 ## RSDB SAR Limits
-## SAR Enable ON & RSDB & Non-FCC
+## SAR Enable ON
 rsdb_dynamicsarctrl_5g=0xb4b4
-slice/1/rsdb_dynamicsarctrl_2g=0xb4b4
-## SAR Enable ON & RSDB & FCC
 rsdb_dynamicsarctrl_5g_2=0xb4b4
+slice/1/rsdb_dynamicsarctrl_2g=0xb4b4
 slice/1/rsdb_dynamicsarctrl_2g_2=0xb4b4
-## SAR Enable OFF & RSDB 
-rsdb_dynamicsarctrl_5g_1=0xb4b4
-slice/1/rsdb_dynamicsarctrl_2g_1=0xb4b4
+## SAR Enable OFF
+rsdb_dynamicsarctrl_5g_1=0xc6c6
+slice/1/rsdb_dynamicsarctrl_2g_1=0xc6c6
+
 ## --- CH12 CH13 Power Limit ---
 slice/1/fccpwrch12=10
 slice/1/fccpwrch13=1
-#slice/1/fccpwroverride=0
+slice/1/fccpwroverride=0
 
 ## --- RX Temperature Throttling parameter ---
 #throttle_thresh=50
@@ -314,4 +313,8 @@ muxenab=0x000103
 
 ## --- 11b ANT selection Diversity ---
 cck_onecore_tx=1
+#slice/1/ocl=0
 
+## --- 11b ANT selection Diversity core mask setting ---
+#ocl_cm=2
+#slice/1/ocl_cm=2
