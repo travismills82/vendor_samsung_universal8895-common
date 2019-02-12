@@ -65,6 +65,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/lib64/libfloatingfeature.so:system/lib64/libfloatingfeature.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
+	vendor/samsung/universal8895-common/proprietary/lib/libvulkan.so:system/lib/libvulkan.so \
+	vendor/samsung/universal8895-common/proprietary/lib64/libvulkan.so:system/lib64/libvulkan.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib/libOpenCv.so:system/vendor/lib/libOpenCv.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
