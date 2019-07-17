@@ -47,7 +47,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/lib/libtlc_direct_comm.so:system/lib/libtlc_direct_comm.so \
     vendor/samsung/universal8895-common/proprietary/lib/libtlc_tima_atn.so:system/lib/libtlc_tima_atn.so \
     vendor/samsung/universal8895-common/proprietary/lib/libtlc_tz_esecomm.so:system/lib/libtlc_tz_esecomm.so \
-    vendor/samsung/universal8895-common/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
     vendor/samsung/universal8895-common/proprietary/lib/libtlc_tima_pkm.so:system/lib/libtlc_tima_pkm.so \
     vendor/samsung/universal8895-common/proprietary/lib64/libtlc_comm.so:system/lib64/libtlc_comm.so \
     vendor/samsung/universal8895-common/proprietary/lib/libtlc_comm.so:system/lib/libtlc_comm.so \
@@ -61,8 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/lib64/libfloatingfeature.so:system/lib64/libfloatingfeature.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/egl/libGLES_mali.so:system/vendor/lib64/egl/libGLES_mali.so \
-    vendor/samsung/universal8895-common/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
-    vendor/samsung/universal8895-common/proprietary/vendor/lib64/libOpenCL.so:system/vendor/lib64/libOpenCL.so \
     vendor/samsung/universal8895-common/proprietary/lib/libacryl.so:system/lib/libacryl.so \
     vendor/samsung/universal8895-common/proprietary/lib64/libacryl.so:system/lib64/libacryl.so \
     vendor/samsung/universal8895-common/proprietary/vendor/firmware/companion_2l2_master_setfile.bin:system/vendor/firmware/companion_2l2_master_setfile.bin \
@@ -97,6 +94,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/vendor/firmware/calliope_sram.bin:system/vendor/firmware/calliope_sram.bin \
     vendor/samsung/universal8895-common/proprietary/vendor/firmware/dsm.bin:system/vendor/firmware/dsm.bin \
     vendor/samsung/universal8895-common/proprietary/vendor/firmware/dsm_tune.bin:system/vendor/firmware/dsm_tune.bin \
+    vendor/samsung/universal8895-common/proprietary/vendor/firmware/bcm4361B0_murata.hcd:system/vendor/firmware/bcm4361B0_murata.hcd \
+    vendor/samsung/universal8895-common/proprietary/vendor/firmware/bcm4361B0_semco.hcd:system/vendor/firmware/bcm4361B0_semco.hcd \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:system/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/08130000000000000000000000000000.tlbin:system/vendor/app/mcRegistry/08130000000000000000000000000000.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/app/mcRegistry/ffffffff00000000000000000000000e.tlbin:system/vendor/app/mcRegistry/ffffffff00000000000000000000000e.tlbin \
@@ -130,8 +129,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/ffffffffd00000000000000000000017.tlbin:system/app/mcRegistry/ffffffffd00000000000000000000017.tlbin \
     vendor/samsung/universal8895-common/proprietary/app/mcRegistry/fffffffff0000000000000000000001b.tlbin:system/app/mcRegistry/fffffffff0000000000000000000001b.tlbin \
     vendor/samsung/universal8895-common/proprietary/vendor/bin/mcDriverDaemon:system/vendor/bin/mcDriverDaemon \
-    vendor/samsung/universal8895-common/proprietary/vendor/lib/libMcRegistry.so:system/vendor/lib/libMcRegistry.so \
-    vendor/samsung/universal8895-common/proprietary/vendor/lib64/libMcRegistry.so:system/vendor/lib64/libMcRegistry.so \
+    vendor/samsung/universal8895-common/proprietary/lib/libMcRegistry.so:system/lib/libMcRegistry.so \
+    vendor/samsung/universal8895-common/proprietary/lib64/libMcRegistry.so:system/lib64/libMcRegistry.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib/libMcClient.so:system/vendor/lib/libMcClient.so \
     vendor/samsung/universal8895-common/proprietary/vendor/lib64/libMcClient.so:system/vendor/lib64/libMcClient.so \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/nfc/SGP/sec_s3nrn82_rfreg.bin:system/vendor/etc/nfc/SGP/sec_s3nrn82_rfreg.bin \
@@ -198,12 +197,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/lib/hw/gralloc.exynos5.so:system/lib/hw/gralloc.exynos5.so \
     vendor/samsung/universal8895-common/proprietary/lib64/libion.so:system/lib64/libion.so \
     vendor/samsung/universal8895-common/proprietary/lib64/hw/gralloc.exynos5.so:system/lib64/hw/gralloc.exynos5.so \
-	vendor/samsung/universal8895-common/proprietary/vendor/firmware/bcm4361B0_murata.hcd:system/vendor/firmware/bcm4361B0_murata.hcd \
-	vendor/samsung/universal8895-common/proprietary/vendor/firmware/bcm4361B0_semco.hcd:system/vendor/firmware/bcm4361B0_semco.hcd \	
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_clm.blob:system/vendor/etc/wifi/bcmdhd_clm.blob \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_b0:system/vendor/etc/wifi/bcmdhd_mfg.bin_b0 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_mfg.bin_b2:system/vendor/etc/wifi/bcmdhd_mfg.bin_b2 \
-	vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_mon.bin_b2:system/vendor/etc/wifi/bcmdhd_mon.bin_b2 \
+    vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_mon.bin_b2:system/vendor/etc/wifi/bcmdhd_mon.bin_b2 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_b0:system/vendor/etc/wifi/bcmdhd_sta.bin_b0 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_b2:system/vendor/etc/wifi/bcmdhd_sta.bin_b2 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt:system/vendor/etc/wifi/nvram.txt \
@@ -221,5 +218,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02a_a1:system/vendor/etc/wifi/nvram.txt_r02a_a1 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02c_a1:system/vendor/etc/wifi/nvram.txt_r02c_a1 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02g_b0:system/vendor/etc/wifi/nvram.txt_r02g_b0 \
-	vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02j_b0:system/vendor/etc/wifi/nvram.txt_r02j_b0 \
+    vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/nvram.txt_r02j_b0:system/vendor/etc/wifi/nvram.txt_r02j_b0 \
     vendor/samsung/universal8895-common/proprietary/vendor/etc/wifi/wldu.conf:system/vendor/etc/wifi/wldu.conf
